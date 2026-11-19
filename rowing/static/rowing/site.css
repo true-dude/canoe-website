@@ -53,3 +53,107 @@ dialog{padding:0;width:min(660px,calc(100vw - 30px));max-width:100%;border:0;bor
 .contact-links a{text-decoration:underline;text-underline-offset:3px}
 .team-card .team-achievements{margin-top:8px;white-space:pre-line}
 @media(max-width:400px){.brand-custom{max-width:165px}}
+
+.statement-water {
+  position: absolute;
+  inset: 0 0 0 46%;
+  visibility: hidden;
+  background: radial-gradient(ellipse at 64% 43%, #205661 0%, #133b45 42%, #0b2228 78%);
+}
+
+.statement-water canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.has-kayak-scene {
+  background: var(--ink);
+}
+
+.has-kayak-scene .statement-photo {
+  display: none;
+}
+
+.has-kayak-scene .statement-water {
+  visibility: visible;
+}
+
+.has-kayak-scene .statement-overlay {
+  background: linear-gradient(90deg, #0b2228 36%, transparent 64%);
+}
+
+.has-kayak-scene .statement-caption {
+  align-self: flex-start;
+  text-align: left;
+  color: #a9c6c1;
+}
+
+.has-kayak-scene .statement-grid h2 {
+  font-size: clamp(48px, 6vw, 104px);
+}
+
+.kayak-playback {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 22px;
+  right: max(17px, calc((100% - 1330px) / 2));
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid #7ba7a3;
+  border-radius: 4px;
+  background: #0b2228;
+  color: #d9eee8;
+}
+
+.has-kayak-scene .kayak-playback:not([hidden]) {
+  display: grid;
+}
+
+.kayak-playback::before {
+  content: "";
+  width: 10px;
+  height: 13px;
+  border-inline: 2px solid currentColor;
+}
+
+.kayak-playback[aria-pressed="true"]::before {
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  border: 0;
+  border-block: 6px solid transparent;
+  border-left: 10px solid currentColor;
+}
+
+.kayak-playback:hover,
+.kayak-playback:focus-visible {
+  border-color: #d9eee8;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .has-kayak-scene {
+    height: 432px;
+  }
+
+  .has-kayak-scene .statement-water {
+    inset: 0 0 auto;
+    height: 245px;
+    background: radial-gradient(ellipse at 54% 35%, #205661, #123a44 51%, #0b2228 90%);
+  }
+
+  .has-kayak-scene .statement-overlay {
+    background: linear-gradient(0deg, #0b2228 42%, transparent 63%);
+  }
+
+  .has-kayak-scene .statement-caption {
+    margin-top: 207px;
+  }
+
+  .has-kayak-scene .statement-grid h2 {
+    font-size: clamp(38px, 10vw, 62px);
+  }
+}

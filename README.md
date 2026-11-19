@@ -48,3 +48,21 @@ Compose-конфигурация предназначена для локаль�
 ```sh
 docker compose exec web python manage.py test
 ```
+
+## Статическая версия для GitHub Pages
+
+Готовая публичная версия находится в `docs/`. На GitHub в **Settings → Pages**
+выберите **Deploy from a branch**, ветку публикации и папку **/docs**.
+
+Чтобы обновить экспорт после изменения контента или кода, выполните из каталога проекта:
+
+```sh
+docker compose up -d --build --wait
+mkdir -p docs
+docker compose run --rm --no-deps --user "$(id -u):$(id -g)" \
+  -v "$PWD/docs:/export" web python manage.py export_pages /export
+```
+
+Команда заменяет сгенерированную страницу и файлы в `docs/static/` и `docs/media/`.
+Добавьте обновлённую папку `docs/` в коммит публикуемой ветки. Django Admin и база
+работают в основном приложении. Экспорт содержит публичные данные на момент сборки.
