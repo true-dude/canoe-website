@@ -1,0 +1,19 @@
+{% for document in documents %}
+  {% with url=document.public_url %}
+    <div class="document-row{% if not url %} placeholder{% endif %}">
+      <span class="document-icon">{{ document.kind }}</span>
+      <div>
+        <span class="document-name">{{ document.name }}</span>
+        {% if not url %}<span class="doc-hint">Файл появится после предоставления федерацией</span>{% endif %}
+      </div>
+      <span class="document-date">{{ document.updated }}</span>
+      {% if url %}
+        <a class="document-link" href="{{ url }}" target="_blank" rel="noopener noreferrer">Открыть</a>
+      {% else %}
+        <span class="document-link disabled">Нет файла</span>
+      {% endif %}
+    </div>
+  {% endwith %}
+{% empty %}
+  <p>Документов пока нет.</p>
+{% endfor %}

@@ -1,0 +1,23 @@
+{% for place in places %}
+  <article class="place-card">
+    {% if place.image_url %}
+      <div class="place-media">
+        <img src="{{ place.image_url }}" alt="{{ place.photo_alt|default:place.name }}" loading="lazy" decoding="async">
+        {% if place.badge %}<span class="place-photo-label">{{ place.badge }}</span>{% endif %}
+        <span class="place-photo-note">КАЗАНЬ / РТ</span>
+      </div>
+    {% endif %}
+    <div class="place-body">
+      <span class="place-kind">{{ place.kind }}</span>
+      <h3>{{ place.name }}</h3>
+      <span class="place-address">{{ place.address }}</span>
+      <p>{{ place.description }}</p>
+      <div class="place-actions">
+        <a href="{{ place.maps }}" target="_blank" rel="noopener noreferrer">Открыть на карте</a>
+        <a href="{{ place.source }}" target="_blank" rel="noopener noreferrer">О площадке</a>
+      </div>
+    </div>
+  </article>
+{% empty %}
+  <p>Список тренировочных площадок пока пуст.</p>
+{% endfor %}

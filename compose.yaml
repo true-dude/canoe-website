@@ -1,0 +1,45 @@
+services:
+  web:
+    build: .
+    environment:
+      DJANGO_DEBUG: "1"
+      POSTGRES_HOST: db
+      POSTGRES_DB: rowing
+      POSTGRES_USER: rowing
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rowing-local-dev}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${WEB_PORT:-8000}:8000"
+    volumes:
+      - media:/app/media
+    command:
+      - sh
+      - -ec
+      - |
+        python manage.py migrate --noinput
+        exec python manage.py runserver 0.0.0.0:8000 --noreload
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/', timeout=3).close()"]
+      interval: 5s
+      timeout: 4s
+      retries: 10
+
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: rowing
+      POSTGRES_USER: rowing
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rowing-local-dev}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 3s
+      timeout: 3s
+      retries: 15
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:
+  media:

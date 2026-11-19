@@ -1,0 +1,12 @@
+{% for sport in sports %}
+  <article class="discipline-row">
+    <span>{{ forloop.counter|stringformat:"02d" }}</span>
+    <div>
+      <h3>{{ sport.name }}</h3>
+      <p>{{ sport.description }}</p>
+      <small>{{ sport.code }}</small>
+    </div>
+    <b aria-hidden="true">{{ sport.short_code }}</b>
+  </article>
+{% endfor %}
+<div class="discipline-foot">БАЙДАРКА / КАНОЭ / КОМАНДНАЯ ГРЕБЛЯ</div>

@@ -1,0 +1,20 @@
+{% for item in news %}
+  <article class="news-story{% if forloop.first %} featured{% endif %}{% if not item.photo %} no-photo{% endif %}">
+    {% if item.photo %}
+      <div class="news-media">
+        <img src="{{ item.photo.url }}" loading="lazy" decoding="async" alt="{{ item.photo_alt|default:item.title }}">
+        <span class="news-photo-stamp">ФОТО ПЕРВОИСТОЧНИКА</span>
+        <span class="news-photo-credit">{{ item.photo_credit }}</span>
+      </div>
+    {% endif %}
+    <div class="news-copy">
+      {% if not item.photo %}<span class="news-text-edition">СПОРТИВНАЯ ХРОНИКА / КАЗАНЬ</span>{% endif %}
+      <span class="news-meta">{{ item.category }} <b>/</b> {{ item.date|date:"j E Y" }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.excerpt }}</p>
+      <a class="news-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Читать в «{{ item.source_name }}»</a>
+    </div>
+  </article>
+{% empty %}
+  <p>Новостей пока нет.</p>
+{% endfor %}

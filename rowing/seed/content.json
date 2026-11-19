@@ -1,0 +1,236 @@
+{
+  "organization": {
+    "name": "Федерация гребли на байдарках и каноэ Республики Татарстан",
+    "president": "Олег Владимирович Коробченко",
+    "president_source": "https://www.tatar-inform.ru/news/v-kazani-proidet-turnir-po-greble-na-baidarkax-i-kanoe-v-ramkax-spartakiady-6039688",
+    "email": "",
+    "phone": "",
+    "telegram": ""
+  },
+  "events": [
+    {
+      "slug": "spartakiada-2026",
+      "title": "Спартакиада народов России",
+      "subtitle": "Гребля на байдарках и каноэ",
+      "start": "2026-09-02",
+      "end": "2026-09-04",
+      "place": "Центр гребных видов спорта, Казань",
+      "discipline": "sprint",
+      "level": "Всероссийские",
+      "description": "Соревнования среди сильнейших спортсменов России. Турнир прошёл в Казани со 2 по 4 сентября 2026 года.",
+      "source": "https://www.tatar-inform.ru/news/v-kazani-proidet-turnir-po-greble-na-baidarkax-i-kanoe-v-ramkax-spartakiady-6039688",
+      "results": ""
+    },
+    {
+      "slug": "junior-2026",
+      "title": "Первенство России и всероссийские соревнования",
+      "subtitle": "Юниоры до 17 лет и участники до 15 лет",
+      "start": "2026-08-26",
+      "end": "2026-09-01",
+      "place": "Казань",
+      "discipline": "sprint",
+      "level": "Всероссийские",
+      "description": "В Казани проходили первенство России среди юниоров до 17 лет и всероссийские соревнования до 15 лет.",
+      "source": "https://spb-greblya.ru/novosti/post/v-kazani-zavershilos-pervenstvo-rossii-i-vserossijskih-sorevnovanij",
+      "results": ""
+    },
+    {
+      "slug": "dragon-2026",
+      "title": "Чемпионат России по гребле на лодках «Дракон»",
+      "subtitle": "Командные заезды",
+      "start": "2026-05-27",
+      "end": "2026-05-31",
+      "place": "Казань, озеро Нижний Кабан",
+      "discipline": "dragon",
+      "level": "Всероссийские",
+      "description": "В интервью с руководством региональной федерации сообщалось о проведении чемпионата России по гребле на лодках «Дракон» 27–31 мая 2026 года.",
+      "source": "https://www.tatar-inform.ru/news/federaciya-grebli-na-baidarkax-i-kanoe-rt-komanda-iz-samary-byla-v-vostorge-ot-nasei-bazy-6028512",
+      "results": ""
+    },
+    {
+      "slug": "teterin-2026",
+      "title": "XXIV мемориал заслуженного тренера Н. С. Тетерина",
+      "subtitle": "Республиканские соревнования",
+      "start": "2026-09-10",
+      "end": "2026-09-12",
+      "place": "Центр гребных видов спорта, Казань",
+      "discipline": "sprint",
+      "level": "Региональные",
+      "description": "Соревнования включены в календарный план спортивных мероприятий Татарстана на 2026 год.",
+      "source": "https://minsport.tatarstan.ru/file/pub/pub_4961886.pdf",
+      "results": ""
+    },
+    {
+      "slug": "champ-2026",
+      "title": "Чемпионат Республики Татарстан",
+      "subtitle": "Гребля на байдарках и каноэ",
+      "start": "2026-09-10",
+      "end": "2026-09-12",
+      "place": "Центр гребных видов спорта, Казань",
+      "discipline": "sprint",
+      "level": "Региональные",
+      "description": "Соревнования включены в календарный план спортивных мероприятий Татарстана на 2026 год.",
+      "source": "https://minsport.tatarstan.ru/file/pub/pub_4961886.pdf",
+      "results": ""
+    },
+    {
+      "slug": "tatarstan-cup-2026",
+      "title": "Кубок Республики Татарстан",
+      "subtitle": "Гребля на байдарках и каноэ",
+      "start": "2026-06-18",
+      "end": "2026-06-19",
+      "place": "Казань",
+      "discipline": "sprint",
+      "level": "Региональные",
+      "description": "Соревнование указано в официальном календарном плане спортивных мероприятий Республики Татарстан на 2026 год.",
+      "source": "https://minsport.tatarstan.ru/file/pub/pub_4961886.pdf",
+      "results": ""
+    }
+  ],
+  "news": [
+    {
+      "slug": "n1",
+      "source_name": "Татар-информ",
+      "photo": "",
+      "photo_alt": "",
+      "photo_credit": "",
+      "date": "2026-09-04",
+      "category": "Соревнования",
+      "title": "В Казани стартовала Спартакиада народов России по гребле",
+      "excerpt": "На старт в Центре гребных видов спорта вышли около 190 спортсменов из 21 региона России. В программе — дистанции 200, 500 и 1000 метров.",
+      "url": "https://www.tatar-inform.ru/news/v-kazani-startovala-spartakiada-narodov-rossii-po-greble-na-baidarkax-i-kanoe-6040139"
+    },
+    {
+      "slug": "n2",
+      "source_name": "Татар-информ",
+      "photo": "n2.webp",
+      "photo_alt": "Пресс-конференция перед Спартакиадой народов России по гребле в Казани",
+      "photo_credit": "Иван Жуков / Татар-информ",
+      "date": "2026-09-01",
+      "category": "События",
+      "title": "В Казани анонсировали турнир в рамках Спартакиады",
+      "excerpt": "Организаторы рассказали о предстоящих стартах 2–4 сентября и участниках соревнований.",
+      "url": "https://www.tatar-inform.ru/news/v-kazani-proidet-turnir-po-greble-na-baidarkax-i-kanoe-v-ramkax-spartakiady-6039688"
+    },
+    {
+      "slug": "n4",
+      "source_name": "Татар-информ",
+      "photo": "n4.webp",
+      "photo_alt": "Награждение участников Первенства России по гребле в Казани",
+      "photo_credit": "Пресс-служба Минпромторга РТ / Татар-информ",
+      "date": "2026-08-30",
+      "category": "Первенство России",
+      "title": "Коробченко принял участие в награждении на Первенстве России",
+      "excerpt": "30 августа в Казани состоялись финалы на дистанции 200 метров. Олег Коробченко принял участие в церемонии награждения.",
+      "url": "https://www.tatar-inform.ru/news/korobcenko-prinyal-ucastie-v-nagrazdenii-na-pervenstvo-rossii-po-greble-6039473"
+    },
+    {
+      "slug": "n3",
+      "source_name": "Татар-информ",
+      "photo": "n3.webp",
+      "photo_alt": "Гонки на лодках «Дракон» у гребной инфраструктуры Казани",
+      "photo_credit": "Федерация гребли на байдарках и каноэ / Татар-информ",
+      "date": "2026-05-30",
+      "category": "Интервью",
+      "title": "Как в Татарстане развивается гребля на байдарках и каноэ",
+      "excerpt": "Разговор с исполнительным директором региональной федерации о тренировках, базе на Кабане и развитии спорта.",
+      "url": "https://www.tatar-inform.ru/news/federaciya-grebli-na-baidarkax-i-kanoe-rt-komanda-iz-samary-byla-v-vostorge-ot-nasei-bazy-6028512"
+    }
+  ],
+  "locations": [
+    {
+      "slug": "rowing-center",
+      "position": 0,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C._%D0%9E%D0%B1%D1%89%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0_%D0%B3%D1%80%D0%B5%D0%B1%D0%BD%D1%8B%D1%85_%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2_%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%282%29.JPG/960px-%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C._%D0%9E%D0%B1%D1%89%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0_%D0%B3%D1%80%D0%B5%D0%B1%D0%BD%D1%8B%D1%85_%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2_%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%282%29.JPG",
+      "photo_alt": "Панорама Центра гребных видов спорта в Казани",
+      "name": "Центр гребных видов спорта",
+      "kind": "Спортивно-тренировочная база",
+      "address": "ул. Хади Такташа, 122, Казань",
+      "description": "Тренировочная инфраструктура для занятий на воде и в помещении. Уточняйте условия набора непосредственно у спортивной школы.",
+      "source": "https://sport.tatarstan.ru/sport-objects/826",
+      "maps": "https://www.openstreetmap.org/search?query=%D0%A5%D0%B0%D0%B4%D0%B8%20%D0%A2%D0%B0%D0%BA%D1%82%D0%B0%D1%88%D0%B0%20122%20%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C",
+      "badge": "Зимняя подготовка"
+    },
+    {
+      "slug": "kaban-base",
+      "position": 1,
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Lower_Kaban_lake_in_Kazan_%28April_2025%29_-0_1.jpg/960px-Lower_Kaban_lake_in_Kazan_%28April_2025%29_-0_1.jpg",
+      "photo_alt": "Панорама озера Нижний Кабан в Казани",
+      "name": "Гребная база на озере Нижний Кабан",
+      "kind": "Летняя тренировочная база",
+      "address": "Озеро Нижний Кабан, Казань",
+      "description": "Летняя база для тренировок по гребле на байдарках и каноэ, а также на лодках «Дракон».",
+      "source": "https://www.tatar-inform.ru/news/federaciya-grebli-na-baidarkax-i-kanoe-rt-komanda-iz-samary-byla-v-vostorge-ot-nasei-bazy-6028512",
+      "maps": "https://www.openstreetmap.org/search?query=%D0%BE%D0%B7%D0%B5%D1%80%D0%BE%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9A%D0%B0%D0%B1%D0%B0%D0%BD%20%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C",
+      "badge": "На воде"
+    }
+  ],
+  "sports": [
+    {
+      "short_code": "K",
+      "position": 0,
+      "name": "Байдарка",
+      "code": "K–1 / K–2 / K–4",
+      "description": "Скорость, ритм, точность каждого движения.",
+      "slug": "kayak"
+    },
+    {
+      "short_code": "C",
+      "position": 1,
+      "name": "Каноэ",
+      "code": "C–1 / C–2 / C–4",
+      "description": "Сила, баланс и контроль на каждом метре.",
+      "slug": "canoe"
+    },
+    {
+      "short_code": "D",
+      "position": 2,
+      "name": "Лодки «Дракон»",
+      "code": "КОМАНДНАЯ ГРЕБЛЯ",
+      "description": "Единый темп, общая цель, командный характер.",
+      "slug": "dragon"
+    }
+  ],
+  "documents": [
+    {
+      "slug": "calendar-2026",
+      "kind": "PDF",
+      "position": 0,
+      "name": "Календарный план спортивных мероприятий РТ на 2026 год",
+      "updated": "2026",
+      "url": "https://minsport.tatarstan.ru/file/pub/pub_4961886.pdf"
+    },
+    {
+      "slug": "national-rules",
+      "kind": "Сайт",
+      "position": 1,
+      "name": "Федерация каноэ России — нормативные документы",
+      "updated": "Обновляется",
+      "url": "https://www.kayak-canoe.ru/ru/dokumenty"
+    },
+    {
+      "slug": "sports-school",
+      "kind": "Сайт",
+      "position": 2,
+      "name": "Спортивная школа олимпийского резерва — информация",
+      "updated": "Источник",
+      "url": "https://edu.tatar.ru/vahit/org5705/page892344.htm"
+    },
+    {
+      "slug": "charter",
+      "kind": "PDF",
+      "position": 3,
+      "name": "Устав региональной федерации",
+      "updated": "Нужен файл",
+      "url": ""
+    },
+    {
+      "slug": "regional-protocols",
+      "kind": "Архив",
+      "position": 4,
+      "name": "Положения и протоколы региональных соревнований",
+      "updated": "Нужны файлы",
+      "url": ""
+    }
+  ]
+}

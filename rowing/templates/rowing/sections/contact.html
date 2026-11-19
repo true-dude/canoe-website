@@ -1,0 +1,9 @@
+<section class="contact section-space"><div class="container"><div class="contact-grid"><div><div class="section-label"><span class="section-n">08 /</span> ПЕРВЫЙ ШАГ</div><h2>ПОРА<br><em>НА ВОДУ.</em></h2><p>Хочешь попробовать греблю? Начни с тренировочной базы. Посмотри тренировочные базы и уточни условия набора непосредственно в спортшколе.</p></div><div class="contact-right">{% if organization.email or organization.phone or organization.telegram %}
+          <div class="contact-links">
+            {% if organization.email %}<a href="mailto:{{ organization.email }}">{{ organization.email }}</a>{% endif %}
+            {% if organization.phone %}<a href="tel:{{ organization.phone }}">{{ organization.phone }}</a>{% endif %}
+            {% if organization.telegram %}<a href="{{ organization.telegram }}" target="_blank" rel="noopener noreferrer">Канал федерации в Telegram</a>{% endif %}
+          </div>
+        {% else %}
+          <span class="contact-hint">Контакты федерации будут добавлены после подтверждения.</span>
+        {% endif %}<a class="action action-dark" href="https://edu.tatar.ru/vahit/org5705/page892344.htm" target="_blank" rel="noopener noreferrer">Информация спортшколы</a>{% if prototype %}<small>Демо-сайт не принимает заявки на тренировки.</small>{% endif %}</div></div></div></section>

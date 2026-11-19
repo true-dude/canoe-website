@@ -1,0 +1,9 @@
+<header class="site-header" id="top"><div class="container header-inner">
+    <a class="brand" href="#top" aria-label="{{ federation_name }} — главная">
+      <svg class="brand-mark" viewBox="0 0 54 54" fill="none" aria-hidden="true"><rect width="54" height="54" fill="currentColor" rx="5"/><path d="M10 32.5c10.8-6.1 20.8-6.1 33 0M10 40.5c10.8-6.1 20.8-6.1 33 0" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><path d="M24 11 35 30" stroke="#FF5C28" stroke-width="5.2" stroke-linecap="round"/></svg>
+      <span class="brand-type"><strong>{% if standard_name %}Федерация гребли<br>на байдарках и каноэ<br><span class="brand-region">Республики Татарстан</span>{% else %}<span class="brand-custom">{{ federation_name }}</span>{% endif %}</strong></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Разделы сайта"><a href="#events">Соревнования</a><a href="#news">Новости</a><a href="#places">Где заниматься</a><a href="#team">Сборная</a><a href="#documents">Документы</a><a href="#about">Федерация</a></nav>
+    <a class="nav-cta" href="#places">На воду</a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </div><nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация"><a href="#events">Соревнования</a><a href="#news">Новости</a><a href="#places">Где заниматься</a><a href="#team">Сборная</a><a href="#documents">Документы</a><a href="#about">Федерация</a></nav></header>

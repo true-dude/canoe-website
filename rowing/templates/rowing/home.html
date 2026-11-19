@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B2228">
+  <meta name="description" content="Гребля Татарстана. Байдарки, каноэ, лодки «Дракон». Соревнования, новости, спортсмены, документы и места для занятий в Казани.">
+  <meta property="og:title" content="{{ federation_name }}">
+  <meta property="og:description" content="Спортивная жизнь Татарстана: старты, люди и места, где начинается гребля.">
+  <title>{{ federation_name }}{% if prototype %} / Дизайн-прототип{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'rowing/site.css' %}">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <div class="utility-bar"><div class="container utility-inner"><span><i class="utility-dot"></i> РЕСПУБЛИКА ТАТАРСТАН <b>·</b> РЕГИОН 16</span><span>САЙТ ФЕДЕРАЦИИ{% if prototype %} <b>/</b> ДИЗАЙН-ПРОТОТИП{% endif %}</span></div></div>
+  {% include "rowing/sections/header.html" %}
+
+  <main id="main">
+    {% include "rowing/sections/hero.html" %}
+    <div class="rhythm-strip" aria-label="Направления и спортивная жизнь"><div class="container rhythm-inner"><span><b>01</b> НАЧНИ С ГРЕБКА</span><i></i><span><b>02</b> ВЫХОДИ НА СТАРТ</span><i></i><span><b>03</b> ДЕРЖИ КОМАНДНЫЙ РИТМ</span><i></i><span class="rhythm-end">КАЗАНЬ / РТ</span></div></div>
+
+    {% include "rowing/sections/disciplines.html" %}
+
+    {% include "rowing/sections/events.html" %}
+
+    {% include "rowing/sections/statement.html" %}
+
+    {% include "rowing/sections/news.html" %}
+
+    {% include "rowing/sections/places.html" %}
+
+    {% include "rowing/sections/documents.html" %}
+
+    {% include "rowing/sections/team.html" %}
+
+    {% include "rowing/sections/about.html" %}
+
+    {% include "rowing/sections/contact.html" %}
+  </main>
+
+  {% include "rowing/sections/footer.html" %}
+  <dialog id="event-dialog" aria-labelledby="dialog-heading"><button type="button" id="dialog-close" class="dialog-close" aria-label="Закрыть окно">×</button><div id="dialog-content"></div></dialog>
+
+  {{ events_data|json_script:"events-data" }}
+  {{ team_data|json_script:"team-data" }}
+  <script src="{% static 'rowing/site.js' %}" defer></script>
+</body>
+</html>
